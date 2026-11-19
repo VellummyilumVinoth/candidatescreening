@@ -1,0 +1,3 @@
+[workspace]
+title = "CandidateScreening"
+packages = ["candidate_screening_agent"]

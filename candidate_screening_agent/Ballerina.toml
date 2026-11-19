@@ -1,0 +1,10 @@
+[package]
+org = "vinoth"
+name = "candidate_screening_agent"
+version = "0.1.0"
+distribution = "2201.14.1"
+title = "candidate_screening_agent"
+
+[build-options]
+sticky = true
+observabilityIncluded = true
