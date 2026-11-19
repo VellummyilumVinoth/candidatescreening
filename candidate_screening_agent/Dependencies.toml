@@ -334,6 +334,21 @@ dependencies = [
 
 [[package]]
 org = "ballerina"
+name = "otel"
+version = "1.0.0"
+dependencies = [
+	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "log"},
+	{org = "ballerina", name = "observe"},
+	{org = "ballerina", name = "task"}
+]
+modules = [
+	{org = "ballerina", packageName = "otel", moduleName = "otel"}
+]
+
+[[package]]
+org = "ballerina"
 name = "random"
 version = "1.7.2"
 dependencies = [
@@ -384,7 +399,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "websocket"
-version = "2.15.7"
+version = "2.16.1"
 dependencies = [
 	{org = "ballerina", name = "auth"},
 	{org = "ballerina", name = "constraint"},
@@ -408,6 +423,9 @@ version = "0.0.0"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "observe"}
+]
+modules = [
+	{org = "ballerinai", packageName = "observe", moduleName = "observe"}
 ]
 
 [[package]]
@@ -444,6 +462,21 @@ dependencies = [
 ]
 modules = [
 	{org = "ballerinax", packageName = "ai.wso2.integration", moduleName = "ai.wso2.integration"}
+]
+
+[[package]]
+org = "ballerinax"
+name = "amp"
+version = "1.2.1"
+dependencies = [
+	{org = "ballerina", name = "data.jsondata"},
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "jballerina.java"},
+	{org = "ballerina", name = "observe"}
+]
+modules = [
+	{org = "ballerinax", packageName = "amp", moduleName = "amp"}
 ]
 
 [[package]]
@@ -555,9 +588,12 @@ version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "ai"},
 	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "otel"},
 	{org = "ballerina", name = "time"},
+	{org = "ballerinai", name = "observe"},
 	{org = "ballerinax", name = "ai.openai"},
 	{org = "ballerinax", name = "ai.wso2.integration"},
+	{org = "ballerinax", name = "amp"},
 	{org = "ballerinax", name = "googleapis.calendar"},
 	{org = "ballerinax", name = "googleapis.gmail"},
 	{org = "ballerinax", name = "googleapis.sheets"}
