@@ -397,26 +397,6 @@ dependencies = [
 ]
 
 [[package]]
-org = "ballerina"
-name = "websocket"
-version = "2.16.1"
-dependencies = [
-	{org = "ballerina", name = "auth"},
-	{org = "ballerina", name = "constraint"},
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "io"},
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "jwt"},
-	{org = "ballerina", name = "lang.array"},
-	{org = "ballerina", name = "lang.runtime"},
-	{org = "ballerina", name = "lang.string"},
-	{org = "ballerina", name = "lang.value"},
-	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "oauth2"},
-	{org = "ballerina", name = "time"}
-]
-
-[[package]]
 org = "ballerinai"
 name = "observe"
 version = "0.0.0"
@@ -445,23 +425,6 @@ dependencies = [
 ]
 modules = [
 	{org = "ballerinax", packageName = "ai.openai", moduleName = "ai.openai"}
-]
-
-[[package]]
-org = "ballerinax"
-name = "ai.wso2.integration"
-version = "1.2.1"
-dependencies = [
-	{org = "ballerina", name = "ai"},
-	{org = "ballerina", name = "data.jsondata"},
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "io"},
-	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "uuid"},
-	{org = "ballerina", name = "websocket"}
-]
-modules = [
-	{org = "ballerinax", packageName = "ai.wso2.integration", moduleName = "ai.wso2.integration"}
 ]
 
 [[package]]
@@ -592,7 +555,6 @@ dependencies = [
 	{org = "ballerina", name = "time"},
 	{org = "ballerinai", name = "observe"},
 	{org = "ballerinax", name = "ai.openai"},
-	{org = "ballerinax", name = "ai.wso2.integration"},
 	{org = "ballerinax", name = "amp"},
 	{org = "ballerinax", name = "googleapis.calendar"},
 	{org = "ballerinax", name = "googleapis.gmail"},
